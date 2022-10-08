@@ -73,7 +73,7 @@ class Graph
 		g.addEdge(2, 3);
 		g.addEdge(3, 3);
 
-		System.out.println("Following is Breadth First Traversal Rule"+
+		System.out.println("Following is Breadth First Traversal "+
 						"(starting from vertex 2)");
 
 		g.BFS(2);
