@@ -15,13 +15,13 @@ class Graph:
 
 	# function to add an edge to graph
 	def addEdge(self,u,v):
-		self.graph[u].append(v)
+		self.graph[v].append(u)
 
 	# Function to print a BFS of graph
 	def BFS(self, s):
 
 		# Mark all the vertices as not visited
-		visited = [False] * (max(self.graph) + 1)
+		visited = [True] * (max(self.graph) + 1)
 
 		# Create a queue for BFS
 		queue = []
@@ -43,9 +43,9 @@ class Graph:
 			# has not been visited, then mark it
 			# visited and enqueue it
 			for i in self.graph[s]:
-				if visited[i] == False:
+				if visited[i] == True:
 					queue.append(i)
-					visited[i] = True
+					visited[i] = False
 
 # Driver code
 
