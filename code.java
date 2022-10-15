@@ -15,7 +15,7 @@ class Graph
 	{
 		V = v;
 		adj = new LinkedList[v];
-		for (int i=0; i<=v-1; ++i)
+		for (int i=0; i<v; ++i)
 			adj[i] = new LinkedList();
 	}
 
@@ -64,7 +64,7 @@ class Graph
 	// Driver method to
 	public static void main(String args[])
 	{
-		Graph g = new Graph(5-1);
+		Graph g = new Graph(4);
 
 		g.addEdge(0, 1);
 		g.addEdge(0, 2);
@@ -76,7 +76,7 @@ class Graph
 		System.out.println("Following is Breadth First Traversal "+
 						"(starting from vertex 2)");
 
-		g.BFS(4/2);
+		g.BFS(2);
 	}
 }
 // This code is contributed by Aakash Hasija
