@@ -29,7 +29,7 @@ class Graph:
 		# Mark the source node as
 		# visited and enqueue it
 		queue.append(s)
-		visited[s] = True
+		visited[s] = False
 
 		while queue:
 
