@@ -15,7 +15,7 @@ class Graph
 	{
 		V = v;
 		adj = new LinkedList[v];
-		for (int i=0; i<=v-1; ++i)
+		for (int i=1; i<=v-1; i++)
 			adj[i] = new LinkedList();
 	}
 
